@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryFriendsAgents", "GeometryFriendsAgents.csproj", "{6F45AB29-7874-4B3D-8073-B2D5F0C1A35F}"
 EndProject
-Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "GeometryFriends", "GeometryFriendsGame\Release\GeometryFriends.exe", "{4A318E06-3561-4818-946D-139D5494F99A}"
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "GeometryFriends", "GeometryFriendsGame\Release\GeometryFriends.exe", "{1917F7B6-D0CB-4336-AD54-D63302AD8D71}"
 	ProjectSection(DebuggerProjectSystem) = preProject
 		PortSupplier = 00000000-0000-0000-0000-000000000000
 		Executable = C:\Users\lisja\OneDrive\Escritorio\universidad\tercer año\Inteligencia Artificial\code\geometry-friends-I.A\GeometryFriendsGame\Release\GeometryFriends.exe
@@ -39,12 +39,12 @@ Global
 		{6F45AB29-7874-4B3D-8073-B2D5F0C1A35F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{6F45AB29-7874-4B3D-8073-B2D5F0C1A35F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{6F45AB29-7874-4B3D-8073-B2D5F0C1A35F}.Release|x86.ActiveCfg = Release|Any CPU
-		{4A318E06-3561-4818-946D-139D5494F99A}.Debug|Any CPU.ActiveCfg = Release|Any CPU
-		{4A318E06-3561-4818-946D-139D5494F99A}.Debug|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{4A318E06-3561-4818-946D-139D5494F99A}.Debug|x86.ActiveCfg = Release|Any CPU
-		{4A318E06-3561-4818-946D-139D5494F99A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A318E06-3561-4818-946D-139D5494F99A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{4A318E06-3561-4818-946D-139D5494F99A}.Release|x86.ActiveCfg = Release|Any CPU
+		{1917F7B6-D0CB-4336-AD54-D63302AD8D71}.Debug|Any CPU.ActiveCfg = Release
+		{1917F7B6-D0CB-4336-AD54-D63302AD8D71}.Debug|Mixed Platforms.ActiveCfg = Release
+		{1917F7B6-D0CB-4336-AD54-D63302AD8D71}.Debug|x86.ActiveCfg = Release
+		{1917F7B6-D0CB-4336-AD54-D63302AD8D71}.Release|Any CPU.ActiveCfg = Release
+		{1917F7B6-D0CB-4336-AD54-D63302AD8D71}.Release|Mixed Platforms.ActiveCfg = Release
+		{1917F7B6-D0CB-4336-AD54-D63302AD8D71}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
