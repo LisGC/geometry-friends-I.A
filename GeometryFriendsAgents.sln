@@ -8,9 +8,9 @@ EndProject
 Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "GeometryFriends", "GeometryFriendsGame\Release\GeometryFriends.exe", "{4A318E06-3561-4818-946D-139D5494F99A}"
 	ProjectSection(DebuggerProjectSystem) = preProject
 		PortSupplier = 00000000-0000-0000-0000-000000000000
-		Executable = C:\Users\lisja\OneDrive\Escritorio\universidad\tercer año\Inteligencia Artificial\Informe\gf\GeometryFriendsGame\Release\GeometryFriends.exe
+		Executable = C:\Users\lisja\OneDrive\Escritorio\universidad\tercer año\Inteligencia Artificial\code\geometry-friends-I.A\GeometryFriendsGame\Release\GeometryFriends.exe
 		RemoteMachine = VERLOREN
-		StartingDirectory = C:\Users\lisja\OneDrive\Escritorio\universidad\tercer año\Inteligencia Artificial\Informe\gf\GeometryFriendsGame\Release
+		StartingDirectory = C:\Users\lisja\OneDrive\Escritorio\universidad\tercer año\Inteligencia Artificial\Informe\code\geometry-friends-I.A
 		Environment = Predeterminado
 		LaunchingEngine = 00000000-0000-0000-0000-000000000000
 		UseLegacyDebugEngines = No
