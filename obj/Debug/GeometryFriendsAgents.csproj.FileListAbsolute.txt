@@ -1,0 +1,6 @@
+C:\Users\lisja\OneDrive\Escritorio\universidad\tercer año\Inteligencia Artificial\Informe\code\geometry-friends-I.A\GeometryFriendsGame\Release\Agents\GeometryFriendsAgents.dll
+C:\Users\lisja\OneDrive\Escritorio\universidad\tercer año\Inteligencia Artificial\Informe\code\geometry-friends-I.A\GeometryFriendsGame\Release\Agents\GeometryFriendsAgents.pdb
+C:\Users\lisja\OneDrive\Escritorio\universidad\tercer año\Inteligencia Artificial\Informe\code\geometry-friends-I.A\obj\Debug\GeometryFriendsAgents.csproj.AssemblyReference.cache
+C:\Users\lisja\OneDrive\Escritorio\universidad\tercer año\Inteligencia Artificial\Informe\code\geometry-friends-I.A\obj\Debug\GeometryFriendsAgents.csproj.CoreCompileInputs.cache
+C:\Users\lisja\OneDrive\Escritorio\universidad\tercer año\Inteligencia Artificial\Informe\code\geometry-friends-I.A\obj\Debug\GeometryFriendsAgents.dll
+C:\Users\lisja\OneDrive\Escritorio\universidad\tercer año\Inteligencia Artificial\Informe\code\geometry-friends-I.A\obj\Debug\GeometryFriendsAgents.pdb
