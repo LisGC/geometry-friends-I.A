@@ -30,15 +30,9 @@ namespace GeometryFriendsAgents
 
         bool output = false;
 
-        enum Direction { Right, RightDown, Down, LeftDown, Left, LeftUp, Up, RightUp };
+        int runAlgorithm = 1;
 
-        //runAlgorithm = 0 --> MCTS and AStar
-        //runAlgorithm = 1 --> MCTS
-        //runAlgorithm = 2 --> Y-Heuristic AStar
-        //runAlgorithm = 3 --> Greedy Goal AStar
-        //runAlgorithm = 4 --> Permutation AStar
-        //runAlgorithm = 5 --> Subgoal AStar
-        private int runAlgorithm = 5;
+        enum Direction { Right, RightDown, Down, LeftDown, Left, LeftUp, Up, RightUp };
 
         public Driver2(List<Node> nodes, int[,] adjacencyMatrix, int[,] directionMap, Queue<Node> route)
         {
@@ -126,69 +120,17 @@ namespace GeometryFriendsAgents
             if (distanceList.Count == 40 && distanceList[0] == distanceList[39] && RectangleAgent.nCollectiblesLeft > 0)
             {
                 distanceList = new List<float>();               
-                if(runAlgorithm == 0)
+                
+                System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
+                int astarAction = UseSubgoalAStar(x, centerY);
+                Log.LogInformation("Driver - Route recalc with Subgoal AStar in ms: " + sw.ElapsedMilliseconds);
+                if (astarAction >= 0)
                 {
-                    System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
-                    int mctsAction = UseMCTSWithAStar(x, centerY);
-                    Log.LogInformation("Driver - Route recalc with MCTS and AStar in ms: " + sw.ElapsedMilliseconds);
-                    if (mctsAction >= 0)
-                    {
-                        return (Moves)mctsAction;
-                    }
-                }
-                else if (runAlgorithm == 1)
-                {
-                    System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
-                    int mctsAction = UseMCTS(x, centerY);
-                    Log.LogInformation("Driver - Route recalc with MCTS in ms: " + sw.ElapsedMilliseconds);
-                    if (mctsAction >= 0)
-                    {
-                        return (Moves)mctsAction;
-                    }
-                }
-                else if (runAlgorithm == 2)
-                {
-                    System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
-                    int astarAction = UseYHeuristicAStar(x, centerY);
-                    Log.LogInformation("Driver - Route recalc with Y-Heuristic AStar in ms: " + sw.ElapsedMilliseconds);
-                    if (astarAction >= 0)
-                    {
-                        return (Moves)astarAction;
-                    }
-                }
-                else if (runAlgorithm == 3)
-                {
-                    System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
-                    int astarAction = UseGreedyGoalAStar(x, centerY);
-                    Log.LogInformation("Driver - Route recalc with Greedy Goal AStar in ms: " + sw.ElapsedMilliseconds);
-                    if (astarAction >= 0)
-                    {
-                        return (Moves)astarAction;
-                    }
-                }
-                else if (runAlgorithm == 4)
-                {
-                    System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
-                    int astarAction = UsePermutationAStar(x, centerY);
-                    Log.LogInformation("Driver - Route recalc with Permutation AStar in ms: " + sw.ElapsedMilliseconds);
-                    if (astarAction >= 0)
-                    {
-                        return (Moves)astarAction;
-                    }
-                }
-                else if (runAlgorithm == 5)
-                {
-                    System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
-                    int astarAction = UseSubgoalAStar(x, centerY);
-                    Log.LogInformation("Driver - Route recalc with Subgoal AStar in ms: " + sw.ElapsedMilliseconds);
-                    if (astarAction >= 0)
-                    {
-                        return (Moves)astarAction;
-                    }
+                    return (Moves)astarAction;
                 }
                 
+                
             }
-            //Algorithms end
 
             if(distanceList.Count >= 40)
             {
@@ -237,45 +179,14 @@ namespace GeometryFriendsAgents
                     {
                         Log.LogInformation("Driver - end of route, nextNode, no actions");
                     }
-                    //Algorithms
-                    if (runAlgorithm == 0)
-                    {
-                        System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
-                        UseMCTSWithAStar(x, centerY);
-                        Log.LogInformation("Driver - Route recalc with MCTS and AStar in ms: " + sw.ElapsedMilliseconds);
-                    }
-                    else if (runAlgorithm == 1)
-                    {
-                        System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
-                        UseMCTS(x, centerY);
-                        Log.LogInformation("Driver - Route recalc with MCTS in ms: " + sw.ElapsedMilliseconds);
-                    }
-                    else if (runAlgorithm == 2)
-                    {
-                        System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
-                        UseYHeuristicAStar(x, centerY);
-                        Log.LogInformation("Driver - Route recalc with Y-Heuristic AStar in ms: " + sw.ElapsedMilliseconds);
-                    }
-                    else if (runAlgorithm == 3)
-                    {
-                        System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
-                        UseGreedyGoalAStar(x, centerY);
-                        Log.LogInformation("Driver - Route recalc with Greedy Goal AStar in ms: " + sw.ElapsedMilliseconds);
-                    }
-                    else if (runAlgorithm == 4)
-                    {
-                        System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
-                        UsePermutationAStar(x, centerY);
-                        Log.LogInformation("Driver - Route recalc with Permutation AStar in ms: " + sw.ElapsedMilliseconds);
-                    }
-                    else if (runAlgorithm == 5)
+                    if (runAlgorithm == 1)
                     {
                         System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
                         UseSubgoalAStar(x, centerY);
                         Log.LogInformation("Driver - Route recalc with Subgoal AStar in ms: " + sw.ElapsedMilliseconds);
                     }
                     return Moves.NO_ACTION;
-                    //Algorithms end
+                 
                 }
                 if (route.Count > 0)
                 { 
@@ -380,26 +291,6 @@ namespace GeometryFriendsAgents
                 }
 
             }
-
-            // possible actions for direction upper right and upper left
-            //if (direction == 7 || direction == 5)
-            //{
-            //    if (alwaysCorrectH < 160 && CanMorphUp(y - alwaysCorrectH - 35, x, alwaysCorrectW))//!RectangleAgent.obstacleOpenSpace[y - alwaysCorrectH - 7, x])
-            //    {
-            //        Log.LogInformation("Driver - test52");
-            //        return Moves.MORPH_UP;
-            //    }
-            //    else if (direction == 7)
-            //    {
-            //        Log.LogInformation("Driver - test112");
-            //        return Moves.MOVE_RIGHT;
-            //    }
-            //    else if (direction == 5)
-            //    {
-            //        Log.LogInformation("Driver - test102");
-            //        return Moves.MOVE_LEFT;
-            //    }
-            //}
 
             if (action == 1 && alwaysCorrectH > 102 && direction != 6)
             {
