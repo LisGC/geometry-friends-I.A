@@ -48,6 +48,8 @@
     <Compile Include="AStar.cs" />
     <Compile Include="CircleAgent.cs" />
     <Compile Include="Driver2.cs" />
+    <Compile Include="MCTS.cs" />
+    <Compile Include="MCTSNode.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RectangleAgent.cs" />

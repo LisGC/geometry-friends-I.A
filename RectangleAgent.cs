@@ -71,6 +71,9 @@ namespace GeometryFriendsAgents
         // output
         public static bool abstractionOutput = false;
         public static bool output = false;
+       
+        // mcts
+        MCTS mcts;
 
         //runAlgorithm = 1 --> Subgoal AStar
         int runAlgorithm = 1;
