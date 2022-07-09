@@ -67,6 +67,9 @@
     <GreenElevators />
     <OrangeElevators />
     <TimeLimit value="120" />
+    <HighScores>
+      <HighScore name="RandRect" value="39" />
+    </HighScores>
   </Level3>
   <Level4>
     <Description />
