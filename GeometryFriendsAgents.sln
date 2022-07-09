@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryFriendsAgents", "GeometryFriendsAgents.csproj", "{6F45AB29-7874-4B3D-8073-B2D5F0C1A35F}"
 EndProject
-Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "GeometryFriends", "GeometryFriendsGame\Release\GeometryFriends.exe", "{D272CDF7-DBD2-4F2D-B0C0-813C0C1BCF24}"
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "GeometryFriends", "GeometryFriendsGame\Release\GeometryFriends.exe", "{AA37CE92-08FB-4B50-B626-2EC62BDACF11}"
 	ProjectSection(DebuggerProjectSystem) = preProject
 		PortSupplier = 00000000-0000-0000-0000-000000000000
 		Executable = C:\Users\lisja\OneDrive\Escritorio\universidad\tercer año\Inteligencia Artificial\code\geometry-friends-I.A\GeometryFriendsGame\Release\GeometryFriends.exe
@@ -39,12 +39,12 @@ Global
 		{6F45AB29-7874-4B3D-8073-B2D5F0C1A35F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{6F45AB29-7874-4B3D-8073-B2D5F0C1A35F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{6F45AB29-7874-4B3D-8073-B2D5F0C1A35F}.Release|x86.ActiveCfg = Release|Any CPU
-		{D272CDF7-DBD2-4F2D-B0C0-813C0C1BCF24}.Debug|Any CPU.ActiveCfg = Release
-		{D272CDF7-DBD2-4F2D-B0C0-813C0C1BCF24}.Debug|Mixed Platforms.ActiveCfg = Release
-		{D272CDF7-DBD2-4F2D-B0C0-813C0C1BCF24}.Debug|x86.ActiveCfg = Release
-		{D272CDF7-DBD2-4F2D-B0C0-813C0C1BCF24}.Release|Any CPU.ActiveCfg = Release
-		{D272CDF7-DBD2-4F2D-B0C0-813C0C1BCF24}.Release|Mixed Platforms.ActiveCfg = Release
-		{D272CDF7-DBD2-4F2D-B0C0-813C0C1BCF24}.Release|x86.ActiveCfg = Release
+		{AA37CE92-08FB-4B50-B626-2EC62BDACF11}.Debug|Any CPU.ActiveCfg = Release
+		{AA37CE92-08FB-4B50-B626-2EC62BDACF11}.Debug|Mixed Platforms.ActiveCfg = Release
+		{AA37CE92-08FB-4B50-B626-2EC62BDACF11}.Debug|x86.ActiveCfg = Release
+		{AA37CE92-08FB-4B50-B626-2EC62BDACF11}.Release|Any CPU.ActiveCfg = Release
+		{AA37CE92-08FB-4B50-B626-2EC62BDACF11}.Release|Mixed Platforms.ActiveCfg = Release
+		{AA37CE92-08FB-4B50-B626-2EC62BDACF11}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
