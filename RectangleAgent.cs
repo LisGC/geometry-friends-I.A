@@ -1516,6 +1516,7 @@ namespace GeometryFriendsAgents
         }
 
         // this method is deprecated, please use SensorsUpdated instead
+        [Obsolete]
         public override void UpdateSensors(int nC, float[] sI, float[] cI, float[] colI)
         {
             
